@@ -124,7 +124,7 @@ def get_screenshots_of_reddit_posts(reddit_object: dict, screenshot_num: int):
 
                 if page.locator('[data-testid="content-gate"]').is_visible():
                     page.locator('[data-testid="content-gate"] button').click()
-                    
+
                 # This line goes to the comment through a permalink
                 page.goto(f'https://reddit.com{comment["comment_url"]}', timeout=0)
 
@@ -140,6 +140,7 @@ def get_screenshots_of_reddit_posts(reddit_object: dict, screenshot_num: int):
                         [comment_tl, comment["comment_id"]],
                     )
                 try:
+                  # Tries to take a screenshot of the div element containing the comment
                     page.locator(f"#t1_{comment['comment_id']}").screenshot(
                         path=f"assets/temp/{reddit_id}/png/comment_{idx}.png"
                     )

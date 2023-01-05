@@ -39,7 +39,7 @@ The only original thing being done is the editing and gathering of all materials
 
 1. Clone this repository
 2. Run `pip install -r requirements.txt`
-3. Run `python -m playwright install` and `python -m playwright install-deps`
+3. Run `python3 -m playwright install` and `python3 -m playwright install-deps`
 
 **EXPERIMENTAL!!!!**
 
@@ -101,6 +101,6 @@ Freebiell (Freebie#3263) - https://github.com/FreebieII
 
 Aman Raza (electro199#8130) - https://github.com/electro199
 
-
 ## LICENSE
+
 [Roboto Fonts](https://fonts.google.com/specimen/Roboto/about) are licensed under [Apache License V2](https://www.apache.org/licenses/LICENSE-2.0)
